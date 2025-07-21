@@ -50,6 +50,7 @@ nav li {
 section.hero {
     background-image: url(/images/blog-image-hero.png);
     min-height: 294px;
+    overflow: hidden;
     background-size: cover;
     color: #FFFFFF;
     display: flex;
@@ -57,6 +58,7 @@ section.hero {
     justify-content: flex-end;
     gap: .5em;
     padding: 1.25rem;
+    margin-bottom: 2.215rem;
 }
 
 .hero-date {
@@ -69,4 +71,30 @@ section.hero {
     font-weight: bold;
     line-height: 108%;
     letter-spacing: -.03125em;
+}
+
+/* Blog Post List View */
+
+#blog-posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.blog-feature-image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+#view-more {
+    margin-bottom: 2.5rem;
+}
+
+/* Footer Section */
+
+footer {
+    height: 105px;
+    background: #202020;
 }
