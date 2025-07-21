@@ -48,7 +48,7 @@ nav li {
 /* Hero Section */
 
 section.hero {
-    background-image: url(/images/blog-image-hero.png);
+    background-image: url(../images/blog-image-hero.png);
     min-height: 294px;
     overflow: hidden;
     background-size: cover;
