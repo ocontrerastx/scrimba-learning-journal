@@ -9,11 +9,13 @@ body {
     font-family: 'Source Sans 3', sans-serif;
 }
 
+/* Header Section */
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 1.25em;
 }
 
 #logo {
@@ -22,12 +24,13 @@ header {
 }
 
 #logo-img {
-    height: 34px;
+    height: 2.125em;
 }
 
 #logo-text {
+    font-size: .875rem;
     font-family: 'Roboto', sans-serif;
-    margin-left: 4px;
+    margin-left: .25rem;
     font-weight: 800;
 }
 
@@ -40,4 +43,30 @@ nav ul {
 nav li {
     font-weight: 600;
     text-transform: uppercase;
+}
+
+/* Hero Section */
+
+section.hero {
+    background-image: url(/images/blog-image-hero.png);
+    min-height: 294px;
+    background-size: cover;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: .5em;
+    padding: 1.25rem;
+}
+
+.hero-date {
+    text-transform: uppercase;
+    font-size: .75em;
+}
+
+.hero-title {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 108%;
+    letter-spacing: -.03125em;
 }
