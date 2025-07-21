@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo-img {
+    height: 34px;
+}
+
+#logo-text {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 4px;
+    font-weight: 800;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav li {
+    font-weight: 600;
+    text-transform: uppercase;
+}
