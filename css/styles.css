@@ -9,6 +9,11 @@ body {
     font-family: 'Source Sans 3', sans-serif;
 }
 
+main {
+    max-width: 1085px;
+    margin: 0 auto;
+}
+
 /* Header Section */
 
 header {
@@ -40,9 +45,17 @@ nav ul {
     gap: 30px;
 }
 
-nav li {
+nav li a {
     font-weight: 600;
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav li a:visited {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
 }
 
 /* Hero Section */
@@ -89,7 +102,12 @@ section.hero {
     display: block;
     width: 100%;
     object-fit: cover;
+    border-radius: 3px;
     margin-bottom: .875rem;
+}
+
+.blog-summary {
+    line-height: 125%;
 }
 
 #view-more {
@@ -101,4 +119,22 @@ section.hero {
 footer {
     height: 105px;
     background: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-title {
+    color: #ECECEC;
+}
+
+.footer-copyright {
+    color: #D7D7D7;
+}
+
+@media (min-width: 800px) {
+    section.hero {
+        min-height: 488px;
+    }
 }
