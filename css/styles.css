@@ -77,15 +77,19 @@ section.hero {
 
 #blog-posts {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: 1fr;
+    grid-auto-flow: dense;
+    gap: 40px;
     padding: 0 20px;
+    margin-bottom: 2.5rem;
 }
 
 .blog-feature-image {
     display: block;
     width: 100%;
     object-fit: cover;
+    margin-bottom: .875rem;
 }
 
 #view-more {
