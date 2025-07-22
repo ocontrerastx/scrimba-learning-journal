@@ -88,7 +88,7 @@ section.hero {
 
 /* Blog Post List View */
 
-#blog-posts {
+#blog-post-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: 1fr;
@@ -137,4 +137,18 @@ footer {
     section.hero {
         min-height: 488px;
     }
+}
+
+/* About Me Page */
+
+.intro-header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3.125rem;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 182px;
+    border: 2px dotted salmon;
 }
