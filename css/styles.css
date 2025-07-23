@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-*, *::before, *::after {
+*, 
+*::before, 
+*::after {
     box-sizing: border-box;
     margin: 0;
 }
+
+/* Base Styles */
 
 body {
     font-family: 'Source Sans 3', sans-serif;
@@ -88,7 +92,7 @@ section.hero {
 
 /* Blog Post List View */
 
-#blog-post-list {
+.blog-posts {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: 1fr;
