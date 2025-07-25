@@ -21,6 +21,8 @@ main {
 /* Header Section */
 
 header {
+    margin: auto;
+    max-width: 1085px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,10 +51,16 @@ header {
     gap: 30px;
 }
 
+.current-page {
+    background-color: #D7D7D7;
+    border-radius: 3px;
+}
+
 nav li a {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
+    padding: .5rem 1rem;
 }
 
 nav li a:visited {
@@ -92,7 +100,7 @@ section.hero {
 
 .blog-posts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-template-rows: 1fr;
     gap: 1.625rem;
     margin-bottom: 2.5rem;
@@ -104,6 +112,10 @@ section.hero {
     object-fit: cover;
     border-radius: 3px;
     margin-bottom: .875rem;
+}
+
+.blog-title a {
+    text-decoration: none;
 }
 
 .blog-summary {
@@ -160,6 +172,10 @@ footer {
     .blog-posts {
         padding: 0 1.25rem;
     }
+
+    article.post {
+        padding: 0 1.25rem;
+    }
 }
 
 /* About Me Page */
@@ -212,8 +228,8 @@ article.post h1 {
 }
 
 article.post img {
-    display: block;
-    max-width: 980px;
+    display: inline-block;
+    width: 100%;
     margin: 0 auto 1rem;
 }
 
