@@ -95,7 +95,6 @@ section.hero {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: 1fr;
     gap: 1.625rem;
-    /* padding: 0 20px; */
     margin-bottom: 2.5rem;
 }
 
@@ -168,7 +167,7 @@ footer {
 .intro-header {
     display: flex;
     flex-wrap: wrap;
-    margin: 5.625rem 0 3.125rem;
+    margin: 2rem 0;
     gap: 26px;
 }
 
@@ -200,4 +199,28 @@ footer {
 .recent-posts > h2 {
     margin:  3.125rem 0 1.75rem;
     text-align: center;
+}
+
+/* Blog Post Page */
+
+article.post {
+    margin-top: 2rem;
+}
+
+article.post h1 {
+    margin-bottom: 1.625rem;
+}
+
+article.post img {
+    display: block;
+    max-width: 980px;
+    margin: 0 auto 1rem;
+}
+
+article.post h2 {
+    margin-bottom: 1rem;
+}
+
+article.post p {
+    margin-bottom: 1rem;
 }
